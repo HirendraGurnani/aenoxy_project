@@ -1,0 +1,17 @@
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
+body {
+  font-family: "Mona-Sans", sans-serif;
+  font-family: "Mona Sans", sans-serif;
+}
+
+.partition {
+    display: flex;
+}
+
+.illustration {
+  background-color: #f4d085;
+  padding-top: 50px;
+  padding-left: 50px;
+  height: 100vh;
+  width: 450px;
+}

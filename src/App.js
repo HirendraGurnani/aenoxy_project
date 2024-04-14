@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
+import UserDetails from "./components/UserDetails";
+import UserProfile from "./components/UserProfile";
+import UserPref from "./components/UserPref";
+import UserVerify from "./components/UserVerify";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [currentScreen, setCurrentScreen] = useState(1);
+  const [userData, setUserData] = useState({});
+
+  const handleNext = (data) => {
+    setUserData({ ...userData, ...data });
+    setCurrentScreen(currentScreen + 1);
+  };
+
+  const renderScreen = () => {
+    switch (currentScreen) {
+      case 1:
+        return <UserDetails onNext={handleNext} />;
+      case 2:
+        return <UserProfile onNext={handleNext} />;
+      case 3:
+        return <UserPref onNext={handleNext} />;
+      case 4:
+        return <UserVerify userData={userData} />;
+      default:
+        return null;
+    }
+  };
+
+  return <div>{renderScreen()}</div>;
 }
 
 export default App;
