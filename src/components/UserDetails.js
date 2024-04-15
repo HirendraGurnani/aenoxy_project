@@ -49,6 +49,7 @@ const UserDetails = ({ onNext }) => {
           height={300}
           width={350}
           src={require("../assets/img/signup.png")}
+          alt="Illustration of a screen surrounded with leaves by Peter Tarka"
         />
         {/* SVG ends */}
       </div>
