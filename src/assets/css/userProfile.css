@@ -1,44 +1,61 @@
 @font-face {
-  font-family: 'Mona Sans';
-  src:
-    url('../../fonts/Mona_Sans/Mona-Sans.woff2') format('woff2 supports variations'),
-    url('../../fonts/Mona_Sans/Mona-Sans.woff2') format('woff2-variations');
+  font-family: "Mona Sans";
+  src: url("../../fonts/Mona_Sans/Mona-Sans.woff2")
+      format("woff2 supports variations"),
+    url("../../fonts/Mona_Sans/Mona-Sans.woff2") format("woff2-variations");
 }
 body {
   font-family: "Mona Sans";
 }
 
 .partition {
-    display: flex;
+  display: flex;
 }
 
 .illustration {
   background-color: #f4d085;
   height: 100vh;
-  width: 550px;
+  width: 600px;
 }
-h5{
+h5 {
   float: right;
 }
 
-svg{
-  color: rgba(0, 0, 0, 0.397);
+svg {
+  color: #3625057a;
 }
 
-.dribbble_banner{
-  padding-left: 50px;
-  padding-top: 50px;
+.dribbble_banner {
+  margin-left: 80px;
+  margin-top: 80px;
 }
 
-.motto{
+.motto {
   margin-top: 50px;
   font-weight: 800;
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.562);
+  color: #362505ab;
 }
 
-img{
+img {
   margin-top: 100px;
-  padding-left: 25px;
-  padding-left: 25px;
+  margin-left: 50px;
+}
+
+.attribution {
+  margin-left: 80px;
+  margin-top: 200px !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.attribution > a {
+  color: #362505ab;
+  &:hover {
+    color: black;
+  }
+}
+
+.userForm {
+  width: 100%;
 }

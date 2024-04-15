@@ -52,39 +52,44 @@ const UserDetails = ({ onNext }) => {
           alt="Illustration of a screen surrounded with leaves by Peter Tarka"
         />
         {/* SVG ends */}
+        <div className="attribution motto">
+          Art by <a href="https://petertarka.com/">Peter Tarka</a>
+        </div>
       </div>
       <div className="userForm">
         <h5>Already a user? Sign in</h5>
-        <h2>Sign up to Dribbble</h2>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={formData.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="username"
-          placeholder="Username"
-          value={formData.username}
-          onChange={handleChange}
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          value={formData.password}
-          onChange={handleChange}
-        />
-        <button onClick={handleNext}>Next</button>
+        <div className="userInput">
+          <h2>Sign up to Dribbble</h2>
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="username"
+            placeholder="Username"
+            value={formData.username}
+            onChange={handleChange}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+          <button onClick={handleNext}>Create Account</button>
+        </div>
       </div>
     </div>
   );
